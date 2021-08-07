@@ -1,0 +1,23 @@
+{
+  "name": "hugo-blog",
+  "version": "1.0.0",
+  "description": "## Todo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lars Graubner <mail@larsgraubner.de> (https://larsgraubner.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "7.14.8",
+    "@babel/core": "7.15.0",
+    "@babel/preset-env": "7.15.0",
+    "autoprefixer": "10.3.1",
+    "postcss": "8.3.6",
+    "postcss-cli": "8.3.1",
+    "postcss-import": "14.0.2"
+  },
+  "dependencies": {
+    "ress": "4.0.0"
+  }
+}

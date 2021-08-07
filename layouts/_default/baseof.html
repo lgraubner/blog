@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {{ $css := resources.Get "css/styles.css" }}
+        {{ $style := $css | resources.PostCSS }}
+        {{ if hugo.IsProduction }}
+            {{ $css = $css | minify | fingerprint }}
+        {{ end }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+
+        <meta name="robots" content="noindex,nofollow" />
+
+        <meta name="theme-color" content="#fafafa" />
+    </head>
+
+    <body>
+        <header>
+            {{ if .IsHome }}
+                <h1>Lars' Blog</h1>
+            {{ else }}
+                <a href="/">Lars' Blog</a>
+            {{ end }}
+
+            <nav>
+                <ul>
+                    {{ range .Site.Menus.main }}
+                        <li>
+                            <a href="{{ .URL }}">
+                                {{ .Name }}
+                            </a>
+                        </li>
+                    {{ end }}
+                    <li>
+                        <a href="mailto:hi@larsgraubner.com">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            {{ block "main" . }}{{ end }}
+        </main>
+
+        {{ partial "footer.html" }}
+
+        {{ $js := resources.Get "js/scripts.js" }}
+        {{ $transpiled := $js | babel | fingerprint }}
+        <script src="{{ $transpiled.Permalink }}" integrity="{{ $transpiled.Data.Integrity }}"></script>
+    </body>
+</html>

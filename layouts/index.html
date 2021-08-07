@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <h2>Latest Articles</h2>
+    <ul>
+        {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+    </ul>
+{{ end }}
