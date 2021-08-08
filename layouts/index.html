@@ -1,9 +1,10 @@
 {{ define "main" }}
+    <p>Welcome on my blog. I'm Lars Graubner.
     <h2>Latest Articles</h2>
     <ul>
         {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
             <li>
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </li>
         {{ end }}
     </ul>

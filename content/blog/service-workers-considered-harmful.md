@@ -1,7 +1,10 @@
 ---
-title: Service workers considered harmful
+categories: ["JavaScript"]
+title: "Service workers considered harmful"
 date: 2018-11-17T12:00:00+02:00
-description: Service workers are an exciting new technology but they should not be used thoughtless as they can do great damage to your site if used incorrect.
+description: "Service workers are an exciting new technology but they should not be used thoughtless as they
+can do great damage to your site if used incorrect."
+url: "/blog/javascript/service-workers-considered-harmful"
 ---
 
 Service workers are an exciting new technology which allows to intercept network traffic. Cool stuff like saving content for offline usage and advanced caching is possible. They are as powerful as they are dangerous.

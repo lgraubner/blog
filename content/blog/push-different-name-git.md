@@ -1,8 +1,9 @@
 ---
-title: Push to a remote branch with a different name in Git
+categories: ["Git"]
+title: "Push to a remote branch with a different name in Git"
 date: 2021-03-30T12:00:00+02:00
-description: ''
-url: 'blog/git/push-different-name-git'
+description: ""
+url: "/blog/git/push-different-branch-name"
 ---
 
 Recently a lot of projects switched their default branch name from `master` to `main` and Github did so for every new repository created. A project I was working with had a (for me) weird syntax for pushing branches:

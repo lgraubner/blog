@@ -1,10 +1,27 @@
-baseURL = "http://larsgraubner.com/"
-languageCode = "en"
-title = "My New Hugo Site"
+baseURL = "https://larsgraubner.com/"
+languageCode = "en-us"
+title = "Lars Graubner"
 
 sectionPagesMenu = "main"
-
 paginate = 10
+disableHugoGeneratorInject = true
+enableGitInfo = true
+
+pluralizeListTitles = false
+
+copyright = "© 2021 Lars Graubner. All rights reserved."
+
+enableRobotsTXT = true
 
 [taxonomies]
-category = 'categories'
+category = "categories"
+
+[markup]
+[markup.highlight]
+style = "github"
+
+[author]
+name = "Lars Graubner"
+
+[params]
+description = "Ramblings about daily web development encounters."

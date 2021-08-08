@@ -1,0 +1,22 @@
+<header>
+    {{ if .IsHome }}
+    <h1>Lars' Blog</h1>
+    {{ else }}
+    <a href="/">Lars' Blog</a>
+    {{ end }}
+
+    <p>{{ .Site.Params.description }}</p>
+
+    <nav>
+        <ul>
+            {{ range .Site.Menus.main }}
+            <li>
+                <a href="{{ .URL }}"> {{ .Name }} </a>
+            </li>
+            {{ end }}
+            <li>
+                <a href="mailto:hi@larsgraubner.com">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
