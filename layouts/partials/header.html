@@ -1,16 +1,14 @@
 <header class="header">
     <div class="container">
         {{ if .IsHome }}
-        <h1 class="title">Lars' Blog</h1>
+        <h1 class="title">{{ .Site.Title }}</h1>
         {{ else }}
-        <a href="/" class="title">Lars' Blog</a>
+        <a href="/" class="title">{{ .Site.Title }}</a>
         {{ end }}
 
-        <div class="block">
-            <p class="subtitle">{{ .Site.Params.description }}</p>
-        </div>
+        <p class="subtitle">{{ .Site.Params.description }}</p>
 
-        <nav>
+        <nav class="nav">
             <ul>
                 {{ range .Site.Menus.main }}
                 <li>

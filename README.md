@@ -16,4 +16,5 @@
 
 - anchored headings
 - OG Tags
-
+- technical seo mit moz Blog abgleichen
+    - https://moz.com/blog/p6
