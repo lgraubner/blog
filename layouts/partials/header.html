@@ -1,22 +1,26 @@
-<header>
-    {{ if .IsHome }}
-    <h1>Lars' Blog</h1>
-    {{ else }}
-    <a href="/">Lars' Blog</a>
-    {{ end }}
+<header class="header">
+    <div class="container">
+        {{ if .IsHome }}
+        <h1 class="title">Lars' Blog</h1>
+        {{ else }}
+        <a href="/" class="title">Lars' Blog</a>
+        {{ end }}
 
-    <p>{{ .Site.Params.description }}</p>
+        <div class="block">
+            <p class="subtitle">{{ .Site.Params.description }}</p>
+        </div>
 
-    <nav>
-        <ul>
-            {{ range .Site.Menus.main }}
-            <li>
-                <a href="{{ .URL }}"> {{ .Name }} </a>
-            </li>
-            {{ end }}
-            <li>
-                <a href="mailto:hi@larsgraubner.com">Contact</a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL }}">{{ .Name }} </a>
+                </li>
+                {{ end }}
+                <li>
+                    <a href="mailto:hi@larsgraubner.com">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
