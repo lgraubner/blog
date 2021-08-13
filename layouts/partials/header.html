@@ -1,24 +1,19 @@
 <header class="header">
     <div class="container">
-        {{ if .IsHome }}
-        <h1 class="title">{{ .Site.Title }}</h1>
-        {{ else }}
-        <a href="/" class="title">{{ .Site.Title }}</a>
-        {{ end }}
+        {{ partial "nav.html" . }}
 
-        <p class="subtitle">{{ .Site.Params.description }}</p>
-
-        <nav class="nav">
-            <ul>
-                {{ range .Site.Menus.main }}
-                <li>
-                    <a href="{{ .URL }}">{{ .Name }} </a>
-                </li>
+        <div class="persona">
+            <img src="/lars.jpg" width="50" height="50" class="avatar" alt="Lars Graubner" />
+            <div>
+                {{ if .IsHome }}
+                <h1 class="title">{{ .Site.Title }}</h1>
+                {{ else }}
+                <a href="/" class="title">{{ .Site.Title }}</a>
                 {{ end }}
-                <li>
-                    <a href="mailto:hi@larsgraubner.com">Contact</a>
-                </li>
-            </ul>
-        </nav>
+                <p class="subtitle">{{ .Site.Params.description }}</p>
+            </div>
+        </div>
+
+
     </div>
 </header>

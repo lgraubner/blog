@@ -16,26 +16,44 @@ p a {
 }
 
 .container {
-    width: 720px;
+    width: 600px;
     margin: 0 auto;
 }
 
 .header {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.nav {
+    margin-bottom: 35px;
+}
+
+.persona {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 13px;
 }
 
 .title {
     text-decoration: none;
     color: var(--text);
     font-weight: 600;
-    font-size: 34px;
+    font-size: 22px;
     margin: 0;
 }
 
 .subtitle {
-    margin-top: 10px;
-    font-size: 17px;
+    margin-top: 3px;
+    font-size: 15px;
 }
 
 .nav {
@@ -48,10 +66,79 @@ p a {
 
 .nav li {
     display: inline-block;
+    align-items: center;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.about {
+    line-height: 1.75em;
+}
+
+.content {
+    font-size: 18px;
+}
+
+.list {
+    margin-left: 30px;
+}
+
+.list li {
+    list-style-type: disc;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+.list a {
+    font-weight: 500;
+}
+
+.heading {
+    font-weight: 600;
+    margin-bottom: 0.675em;
+    font-size: 24px;
+}
+
+.post-list {
+    margin: 0;
+}
+
+.post-list li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.post-list a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.pagination {
+    margin-top: 60px;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.pagination li {
+    list-style: none;
+    margin: 0 5px;
 }
 
 .footer {
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .footer-heading {
@@ -62,4 +149,5 @@ p a {
 
 .copyright {
     margin-top: 40px;
+    font-size: 14px;
 }
