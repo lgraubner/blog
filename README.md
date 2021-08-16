@@ -4,6 +4,7 @@
 
 - About me text homepage
 - Basic Styles
+    - Article styles
 
 ### Pre Launch
 

@@ -3,7 +3,7 @@ languageCode = "en-US"
 title = "Lars Graubner"
 
 sectionPagesMenu = "main"
-paginate = 3
+paginate = 6
 disableHugoGeneratorInject = true
 enableGitInfo = true
 
