@@ -3,8 +3,6 @@
 ## Todo
 
 - About me text homepage
-- Basic Styles
-    - Article styles
 
 ### Pre Launch
 
@@ -12,9 +10,12 @@
 - check category pages
 - redirects
 - Wipe Analytics
+- clear incomplete articles
+- write 2 new articles
 
 ## Nice to have
 
+- a11y
 - anchored headings
 - OG Tags
 - technical seo mit moz Blog abgleichen
