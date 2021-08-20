@@ -14,7 +14,7 @@ copyright = "© 2021 Lars Graubner. All rights reserved."
 enableRobotsTXT = true
 
 [taxonomies]
-category = "categories"
+# category = "categories"
 
 [markup]
 [markup.highlight]

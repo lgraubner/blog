@@ -3,11 +3,7 @@
 ## Todo
 
 - About me text homepage
-
-### Pre Launch
-
-- title + description check
-- check category pages
+- home description
 - redirects
 - Wipe Analytics
 - clear incomplete articles

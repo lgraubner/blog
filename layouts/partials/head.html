@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8" />
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if .Page.Params.description }}{{ .Page.Params.description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 

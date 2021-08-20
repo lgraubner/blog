@@ -34,7 +34,7 @@
           "@type": "Person",
           "name": "{{ .Site.Author.name }}"
         },
-        "description": "{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"
+        "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}"
       }
     {{ end }}
 </script>
