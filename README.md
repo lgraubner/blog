@@ -4,10 +4,9 @@
 
 - About me text homepage
 - home description
-- redirects
+- git article description
+- finish identity function article
 - Wipe Analytics
-- clear incomplete articles
-- write 2 new articles
 
 ## Nice to have
 
