@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8" />
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} – {{ .Site.Author.name }}{{ end }}</title>
     <meta name="description" content="{{ if .Page.Params.description }}{{ .Page.Params.description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -24,10 +24,6 @@
         {{ $style = $style | minify | fingerprint }}
     {{ end }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-
-    {{ if not hugo.IsProduction -}}
-        <meta name="robots" content="noindex,nofollow" />
-    {{- end }}
 
     {{ if hugo.IsProduction -}}
         <script src="https://cdn.usefathom.com/script.js" data-site="YJAIOOQI" defer></script>

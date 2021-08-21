@@ -103,6 +103,10 @@ p a:hover {
     font-size: 17px;
 }
 
+.about p:not(:last-child) {
+    margin-bottom: 1.5em
+}
+
 .content {
     font-size: 18px;
 }

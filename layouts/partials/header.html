@@ -3,14 +3,13 @@
         {{ partial "nav.html" . }}
 
         <div class="persona">
-            <img src="/lars.jpg" width="50" height="50" class="avatar" alt="Lars Graubner" />
+            <img src="/lars.jpg" width="50" height="50" class="avatar" alt="{{ .Site.Author.name }}" />
             <div>
                 {{ if .IsHome }}
-                <h1 class="title">{{ .Site.Title }}</h1>
+                <h1 class="title">{{ .Site.Author.name }}</h1>
                 {{ else }}
-                <a href="/" class="title">{{ .Site.Title }}</a>
+                <a href="/" class="title">{{ .Site.Author.name }}</a>
                 {{ end }}
-                <p class="subtitle">{{ .Site.Params.description }}</p>
             </div>
         </div>
 

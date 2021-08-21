@@ -1,6 +1,6 @@
 baseURL = "https://larsgraubner.com/"
 languageCode = "en-US"
-title = "Lars Graubner"
+title = "Lars Graubner – full-stack developer from Germany"
 
 sectionPagesMenu = "main"
 paginate = 15
@@ -24,4 +24,4 @@ style = "github"
 name = "Lars Graubner"
 
 [params]
-description = "Ramblings about daily web development encounters."
+description = "This is the personal website of Lars Graubner. I'm a full-stack developer from Germany working with JavaScript, PHP and more."
