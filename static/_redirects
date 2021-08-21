@@ -16,3 +16,8 @@ https://friendly-dubinsky-06aa6c.netlify.com/* https://larsgraubner.com/:splat 3
 /unfinished-projects/                   /   301
 /service-workers-considered-harmful/    /blog/javascript/service-workers-considered-harmful/ 301
 /javascript-proxy/                      /blog/javascript/proxy/  301
+/work/                                  /   301
+/about/                                 /   301
+/contact/                               /   301
+/impressum/                             /   301
+/privacy/                               /   301
